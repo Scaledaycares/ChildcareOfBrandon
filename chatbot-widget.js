@@ -301,7 +301,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 function sendToGas4(message, isUserMessage) {
     // Define the Google Apps Script URL for this specific function
-    const GAS_URL4 = 'https://script.google.com/macros/s/AKfycbykFF5Q4NGhfCcSlsCr3o08XqllVtsLqBKo7iKW3SpDuQSnIDYxTpqF7-34h8Tlxfg-Xg/exec';
+    const GAS_URL4 = 'https://script.google.com/macros/s/AKfycbzia67ped62deb44oiUg9Sb7ZaSOqYh3mQeh063bzoMsCYKAGqFzajmlxiaiGmZTK6S8A/exec';
 
     // Check if the message contains an email or has 6 or more digits in total
     if (message.includes('@') || (message.match(/\d/g) || []).length >= 6) {
@@ -339,6 +339,6 @@ function sendToGas4(message, isUserMessage) {
 backButton.addEventListener('click', function() {
         calendlyContainer.style.display = 'none';
         chatbotContainer.style.display = 'flex'; // Change this to 'flex' to match your CSS
-        chatbotToggle.style.display = 'block'; // Ensure the toggle button is visible
+        //chatbotToggle.style.display = 'block'; // Ensure the toggle button is visible
     });
 });
